@@ -8,7 +8,11 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                sh '. venv/bin/activate && pytest'
+                sh '''
+                '. venv/bin/activate
+                  export PYTHONPATH=$(pwd)
+                 pytest
+                 '''
             }
         }
         stage('Docker Build') {
