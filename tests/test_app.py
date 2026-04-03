@@ -1,4 +1,4 @@
-from app import create_app
+from run import create_app
 
 def test_home_page():
     app = create_app()
