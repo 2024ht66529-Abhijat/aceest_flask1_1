@@ -9,9 +9,9 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh '''
-                '. venv/bin/activate
-                  export PYTHONPATH=$(pwd)
-                 pytest
+                    . venv/bin/activate
+                    export PYTHONPATH=$(pwd)
+                    pytest
                  '''
             }
         }
