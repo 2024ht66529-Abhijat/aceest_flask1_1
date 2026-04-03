@@ -1,7 +1,6 @@
 name: ACEest CI
 on: [push, pull_request]
 # This enables manual triggering from the Actions tab
-
   workflow_dispatch:
     inputs:
       environment:
